@@ -331,7 +331,9 @@ def mdisk(url):
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36'
     	 }
 
-    id = url.split("/")[-1]
+    inp = urls #input('Enter the Link: ')
+    fxl = inp.split("/")
+    id = fxl[-1]
     URL = f'https://diskuploader.entertainvideo.com/v1/file/cdnurl?param={id}'
     return requests.get(url=URL, headers=header).json()['source']
 
