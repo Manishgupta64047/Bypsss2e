@@ -12,7 +12,7 @@ from bypasser import ddllist
 
 
 # bot
-bot_token = os.environ.get("TOKEN", "5592788142:AAEdZk47itftPBFkzmc-7niYTP3ui2Oh8eU")
+bot_token = os.environ.get("TOKEN", "6138564053:AAHXU553NMEZL-kht_WsmQPNPdfMmwSStYY")
 api_hash = os.environ.get("HASH", "cceefd3382b44d4d85be2d83201102b7") 
 api_id = os.environ.get("ID", "10956858")
 app = Client("my_bot",api_id=api_id, api_hash=api_hash,bot_token=bot_token)  
@@ -54,7 +54,7 @@ def loopthread(message):
 @app.on_message(filters.command(["start"]))
 def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
     app.send_message(message.chat.id, f"__👋 Hi **{message.from_user.mention}**, i am Link Bypasser Bot, just send me any supported links and i will you get you results.\nCheckout /help to Read More__",
-    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("🔹Devloper", url="https://t.me/Irfan50786")]]), reply_to_message_id=message.id)
+    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("⚡Join Update Channel⚡", url="https://t.me/mdisk_bots")]]), reply_to_message_id=message.id)
 
 
 # help command
